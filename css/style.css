@@ -166,7 +166,7 @@ width: 220px;
      width: 500p;
      position: absolute;
      top: 130px;
-     left: 200px;
+     left: 100px;
  }
 
  .february {
@@ -175,28 +175,28 @@ width: 220px;
      float: right;
 
      top: 645px;
-     right: 180px;
+     right: 80px;
  }
 
  .march {
      position: absolute;
      height: 450px;
      top: 1170px;
-     left: 200px;
+     left: 100px;
 
  }
 
  .april {
      position: absolute;
      height: 450px;
-     right: 190px;
+     right: 90px;
      top: 1690px;
  }
 
  .may {
      position: absolute;
      height: 450px;
-     left: 200px;
+     left: 100px;
      top: 2200px;
 
  }
@@ -204,14 +204,14 @@ width: 220px;
  .june {
      position: absolute;
      height: 450px;
-     right: 200px;
+     right: 100px;
      top: 2717px;
  }
 
  .july {
      position: absolute;
      height: 450px;
-     left: 170px;
+     left: 70px;
      top: 3225px;
 
  }
@@ -219,14 +219,14 @@ width: 220px;
  .august {
      position: absolute;
      height: 450px;
-     right: 190px;
+     right: 90px;
      top: 3735px;
  }
 
  .september {
      position: absolute;
      height: 450px;
-     left: 200px;
+     left: 100px;
      top: 4255px;
 
  }
@@ -235,13 +235,13 @@ width: 220px;
      position: absolute;
      height: 450px;
      top: 4765px;
-     right: 180px;
+     right: 80px;
  }
 
  .november {
      position: absolute;
      height: 450px;
-     left: 187px;
+     left: 87px;
      top: 5280px;
 
  }
@@ -249,7 +249,7 @@ width: 220px;
  .december {
      position: absolute;
      height: 450px;
-     right: 180px;
+     right: 80px;
      top: 5785px;
  }
 
@@ -296,7 +296,7 @@ width: 220px;
      bottom: -25px;
      left: -95px;
      text-decoration: none;
-     color: aliceblue;
+     color: black;
      font-size: 12px;
  }
 
@@ -314,6 +314,7 @@ width: 220px;
     color: black;
     font-size: 12px;
     left: 105px;
+    z-index: 
  }
 
 
@@ -398,3 +399,48 @@ width: 220px;
      color: #253440;
      padding: 15px;
  }
+
+
+ /* responsive */
+/*
+ @media only (max-width: 600px) {
+     .january {
+          height: 450px;
+     width: 500p;
+     position: absolute;
+         top: 130px;
+         left:100px;
+     }
+
+     .left a {
+
+     }
+
+     .february {
+         top: 645px;
+         right: 100px;
+
+     }
+
+     .march {
+         top: 1170px;
+         left:100px;
+
+     }
+
+     .april {
+         right: 100px;
+         top: 1690px;
+     }
+
+     .may {
+         left:100px;
+         top: 2200px;
+
+     }
+
+     .june {
+         right: 100px;
+         top: 2717px;
+     }
+ }*/
