@@ -4,7 +4,117 @@
      font-family: 'Merriweather', serif;
  }
 
+/* for tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+ background-color: aliceblue;
+    font-size: .9rem;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: -40%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent aliceblue transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+} 
+
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.tooltip2 .tooltiptext2 {
+ visibility: hidden;
+  width: 320px;
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: -40%;
+}
+
+.tooltip2 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #009688;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+} 
+
+
+
+.dwtooltip {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.dwtooltip .dwtooltiptext {
+  visibility: hidden;
+width: 220px;
+    background-color: #253440;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7px 7px;
+    position: absolute;
+    z-index: 1;
+    font-size: .8rem;
+    top: 168%;
+    left: -62%;
+    margin-left: -60px;
+}
+
+.dwtooltip .dwtooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 90%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #253440 transparent;
+}
+
+.dwtooltip:hover .dwtooltiptext {
+  visibility: visible;
+}
+/* tooltip end here */
  .tab:hover {
      background-color: #fff;
      border-radius: 50%;
@@ -28,7 +138,23 @@
      text-decoration: none;
      font-family: 'Montserrat', sans-serif;
      font-size: 1.3rem;
+     position: relative;
  }
+ .navdetails a:before{
+     content: "";
+     position: absolute;
+     top:110%;
+     left:0;
+     width:0%;
+     height: 2px;
+     border-bottom: 2px solid #253440;
+     transition: all 0.4s linear;
+}
+
+.navdetails a:hover:before{
+     width: 100%;
+
+}
 
  .months-img {
      height: 344px;
