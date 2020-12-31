@@ -1,0 +1,274 @@
+ body {
+     text-align: center;
+     margin: 0;
+     font-family: 'Merriweather', serif;
+ }
+
+
+ .tab:hover {
+     background-color: #fff;
+     border-radius: 50%;
+ }
+
+ .navdetails {
+     display: flex;
+     justify-content: space-around;
+     padding: 20px;
+ }
+
+ .headernav {
+     display: inline-block;
+     float: right;
+     width: 40%;
+     margin-top: 20px;
+ }
+
+ .navdetails a {
+     color: #009688;
+     text-decoration: none;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 1.3rem;
+ }
+
+ .months-img {
+     height: 344px;
+
+ }
+
+ .january {
+     height: 450px;
+     width: 500p;
+     position: absolute;
+     top: 130px;
+     left: 200px;
+ }
+
+ .february {
+     position: absolute;
+     height: 450px;
+     float: right;
+
+     top: 645px;
+     right: 180px;
+ }
+
+ .march {
+     position: absolute;
+     height: 450px;
+     top: 1170px;
+     left: 200px;
+
+ }
+
+ .april {
+     position: absolute;
+     height: 450px;
+     right: 190px;
+     top: 1690px;
+ }
+
+ .may {
+     position: absolute;
+     height: 450px;
+     left: 200px;
+     top: 2200px;
+
+ }
+
+ .june {
+     position: absolute;
+     height: 450px;
+     right: 200px;
+     top: 2717px;
+ }
+
+ .july {
+     position: absolute;
+     height: 450px;
+     left: 170px;
+     top: 3225px;
+
+ }
+
+ .august {
+     position: absolute;
+     height: 450px;
+     right: 190px;
+     top: 3735px;
+ }
+
+ .september {
+     position: absolute;
+     height: 450px;
+     left: 200px;
+     top: 4255px;
+
+ }
+
+ .october {
+     position: absolute;
+     height: 450px;
+     top: 4765px;
+     right: 180px;
+ }
+
+ .november {
+     position: absolute;
+     height: 450px;
+     left: 187px;
+     top: 5280px;
+
+ }
+
+ .december {
+     position: absolute;
+     height: 450px;
+     right: 180px;
+     top: 5785px;
+ }
+
+
+ .months-img2 {
+     height: 344px;
+     float: right;
+ }
+
+ .calendar {
+     width: 100%;
+ }
+
+ .tablecol1:nth-child(2n) {
+     background-color: #009688;
+     color: white;
+     text-align: center;
+     width: 80%;
+ }
+
+ .tablecol1 {
+     padding: 20px;
+     margin: 50px auto 100px;
+     background-color: aliceblue;
+     text-align: center;
+     width: 80%;
+ }
+
+ .trow {}
+
+ .left {
+     display: inline-block;
+     width: 40%;
+ }
+
+ .left a {
+     display: inline-block;
+
+     transform: rotate(-90deg);
+     transform-origin: left;
+
+
+     position: relative;
+     bottom: -25px;
+     left: -95px;
+     text-decoration: none;
+     color: aliceblue;
+     font-size: 12px;
+ }
+
+ .right {
+     display: inline-block;
+     width: 55%;
+ }
+ .rightanchor a {
+     top: 25px;
+    display: inline-block;
+    transform: rotate(90deg);
+    transform-origin: right;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    left: 105px;
+ }
+
+
+ .calendarbody1 {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ .calendarbody1:hover {
+     color: black;
+     background-color: #d3dce3;
+ }
+
+ .calendarbody2 {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ .calendarbody2:hover {
+     background-color: #08b1a1;
+     color: white;
+ }
+
+ .calendarheader {
+     background: aliceblue;
+     padding: 10px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 2rem;
+     color: black;
+     font-weight: 600;
+ }
+
+ .calendarheader1 {
+     font-family: 'Montserrat', sans-serif;
+ }
+
+ .calendarheader2 {
+     background: #009688;
+     padding: 10px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 2rem;
+     color: white;
+ }
+
+ .navbar {
+     background-color: aliceblue;
+     height: 100px;
+ }
+
+ .navbar img {
+     margin: 15px 10px 15px 38px;
+     width: 70px;
+ }
+
+ .navbar h1 {
+     display: inline-block;
+     font-size: 1.5rem;
+     font-family: 'Sacramento', cursive;
+     float: right;
+     padding-top: 25px;
+
+ }
+
+ .logo-div {
+     display: inline-block;
+     float: left;
+ }
+
+ .bottom-container {
+     padding-top: 50px;
+     padding-bottom: 20px;
+     background-color: #009688;
+ }
+
+
+ .bottom-container p {
+     color: white;
+     font-size: .85rem;
+ }
+
+
+ .footer-link {
+     text-decoration: none;
+     color: #253440;
+     padding: 15px;
+ }
