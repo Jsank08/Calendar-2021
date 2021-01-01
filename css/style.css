@@ -1,5 +1,5 @@
 body {
-  background-color: #00bcd4;
+  background-color: #164a41;
   text-align: center;
   margin: 0;
   font-family: "Merriweather", serif;
@@ -28,7 +28,7 @@ body.dark {
 /* for tooltip */
 .tooltip {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .tooltip .tooltiptext {
@@ -42,8 +42,8 @@ body.dark {
   padding: 6px 0;
   position: absolute;
   z-index: 1;
-  top: -5px;
-  left: -40%;
+  top: 415px;
+  left: 50%;
 }
 
 .tooltip .tooltiptext::after {
@@ -63,21 +63,21 @@ body.dark {
 
 .tooltip2 {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .tooltip2 .tooltiptext2 {
   visibility: hidden;
   width: 320px;
-  background-color: #009688;
-  color: white;
+  background-color: #164a41;
+  color: aliceblue;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  top: -5px;
-  right: -40%;
+  top: 415px;
+  right: 50%;
 }
 
 .tooltip2 .tooltiptext2::after {
@@ -88,7 +88,7 @@ body.dark {
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent transparent #009688;
+  border-color: transparent transparent transparent #164a41;
 }
 
 .tooltip2:hover .tooltiptext2 {
@@ -177,15 +177,17 @@ body.dark {
 }
 
 .january {
+  display: block;
   height: 450px;
-  width: 500p;
+  /* width: 500p;
   position: absolute;
   top: 130px;
-  left: 100px;
+  left: 100px; */
 }
 
 .february {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   float: right;
 
@@ -195,14 +197,16 @@ body.dark {
 }
 
 .march {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   top: 1160px;
   left: 100px;
 }
 
 .april {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   right: 90px;
   top: 1680px;
@@ -210,14 +214,16 @@ body.dark {
 }
 
 .may {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   left: 100px;
   top: 2190px;
 }
 
 .june {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   right: 100px;
   top: 2707px;
@@ -225,14 +231,16 @@ body.dark {
 }
 
 .july {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   left: 70px;
   top: 3220px;
 }
 
 .august {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   right: 90px;
   top: 3730px;
@@ -240,14 +248,16 @@ body.dark {
 }
 
 .september {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   left: 100px;
   top: 4250px;
 }
 
 .october {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   top: 4760px;
   right: 80px;
@@ -255,14 +265,16 @@ body.dark {
 }
 
 .november {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   left: 87px;
   top: 5275px;
 }
 
 .december {
-  position: absolute;
+  display: block;
+  /* position: absolute; */
   height: 450px;
   right: 80px;
   top: 5785px;
@@ -277,9 +289,30 @@ body.dark {
 .calendar {
   width: 100%;
 }
+.calendar td,
+.calendar th {
+  border: 1px solid #f1b24a;
+  padding: 8px;
+}
+
+.calendar tr:nth-child(even) {
+  /* background-color: #253440; */
+}
+
+.calendar tr:hover {
+  /* background-color: #ddd; */
+}
+
+.calendar th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
 
 .tablecol1:nth-child(2n) {
-  background-color: #009688;
+  background-color: #4d774e;
   color: white;
   text-align: center;
   width: 80%;
@@ -288,21 +321,17 @@ body.dark {
 }
 
 .tablecol1 {
-  padding: 20px;
+  display: flex;
   margin: 50px auto 100px;
-  background-color: aliceblue;
+  background-color: #9dc88d;
   text-align: center;
   width: 80%;
   box-shadow: -10px 12px 20px 0px rgba(0, 0, 0, 0.6),
     0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.trow {
-}
-
 .left {
-  display: inline-block;
-  width: 40%;
+  width: 50%;
 }
 
 .left a {
@@ -320,8 +349,8 @@ body.dark {
 }
 
 .right {
-  display: inline-block;
-  width: 55%;
+  width: 100%;
+  padding: 20px;
 }
 
 .rightanchor a {
@@ -342,7 +371,8 @@ body.dark {
 
 .calendarbody1:hover {
   color: black;
-  background-color: #d3dce3;
+  background-color: #f0f8ff;
+  font-weight: 600;
 }
 
 .calendarbody2 {
@@ -368,7 +398,7 @@ body.dark {
 }
 
 .calendarheader2 {
-  background: #009688;
+  background: #0e2d27;
   padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
