@@ -1,123 +1,126 @@
  body {
-    
-    background-color: #253440;
 
+     background-color: #253440;
      text-align: center;
      margin: 0;
      font-family: 'Merriweather', serif;
  }
+ body.dark {
+       background-color: #fff;
+ }
 
-/* for tooltip */
-.tooltip {
-  position: relative;
-  display: inline-block;
- 
-}
+ /* for tooltip */
+ .tooltip {
+     position: relative;
+     display: inline-block;
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 320px;
- background-color: aliceblue;
-    font-size: .9rem;
-    color: black;
-    text-align: center;
-    border-radius: 6px;
-    padding: 6px 0;
-    position: absolute;
-    z-index: 1;
-    top: -5px;
-    left: -40%;
-}
+ }
 
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent aliceblue transparent transparent;
-}
+ .tooltip .tooltiptext {
+     visibility: hidden;
+     width: 320px;
+     background-color: aliceblue;
+     font-size: .9rem;
+     color: black;
+     text-align: center;
+     border-radius: 6px;
+     padding: 6px 0;
+     position: absolute;
+     z-index: 1;
+     top: -5px;
+     left: -40%;
+ }
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-} 
+ .tooltip .tooltiptext::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     right: 100%;
+     margin-top: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent aliceblue transparent transparent;
+ }
 
-.tooltip2 {
-  position: relative;
-  display: inline-block;
- 
-}
+ .tooltip:hover .tooltiptext {
+     visibility: visible;
+ }
 
-.tooltip2 .tooltiptext2 {
- visibility: hidden;
-  width: 320px;
-  background-color: #009688;
-  color: white;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: -5px;
-  right: -40%;
-}
+ .tooltip2 {
+     position: relative;
+     display: inline-block;
 
-.tooltip2 .tooltiptext2::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  margin-top: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent transparent #009688;
-}
+ }
 
-.tooltip2:hover .tooltiptext2 {
-  visibility: visible;
-} 
+ .tooltip2 .tooltiptext2 {
+     visibility: hidden;
+     width: 320px;
+     background-color: #009688;
+     color: white;
+     text-align: center;
+     border-radius: 6px;
+     padding: 5px 0;
+     position: absolute;
+     z-index: 1;
+     top: -5px;
+     right: -40%;
+ }
+
+ .tooltip2 .tooltiptext2::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     left: 100%;
+     margin-top: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent transparent transparent #009688;
+ }
+
+ .tooltip2:hover .tooltiptext2 {
+     visibility: visible;
+ }
 
 
 
-.dwtooltip {
-  position: relative;
-  display: inline-block;
-  
-}
+ .dwtooltip {
+     position: relative;
+     display: inline-block;
 
-.dwtooltip .dwtooltiptext {
-  visibility: hidden;
-width: 220px;
-    background-color: #253440;
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 7px 7px;
-    position: absolute;
-    z-index: 1;
-    font-size: .8rem;
-    top: 168%;
-    left: -62%;
-    margin-left: -60px;
-}
+ }
 
-.dwtooltip .dwtooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 90%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #253440 transparent;
-}
+ .dwtooltip .dwtooltiptext {
+     visibility: hidden;
+     width: 220px;
+     background-color: #253440;
+     color: white;
+     text-align: center;
+     border-radius: 6px;
+     padding: 7px 7px;
+     position: absolute;
+     z-index: 1;
+     font-size: .8rem;
+     top: 168%;
+     left: -62%;
+     margin-left: -60px;
+ }
 
-.dwtooltip:hover .dwtooltiptext {
-  visibility: visible;
-}
-/* tooltip end here */
+ .dwtooltip .dwtooltiptext::after {
+     content: "";
+     position: absolute;
+     bottom: 100%;
+     left: 90%;
+     margin-left: -5px;
+     border-width: 5px;
+     border-style: solid;
+     border-color: transparent transparent #253440 transparent;
+ }
+
+ .dwtooltip:hover .dwtooltiptext {
+     visibility: visible;
+ }
+
+ /* tooltip end here */
  .tab:hover {
      background-color: #fff;
      border-radius: 50%;
@@ -143,21 +146,22 @@ width: 220px;
      font-size: 1.3rem;
      position: relative;
  }
- .navdetails a:before{
+
+ .navdetails a:before {
      content: "";
      position: absolute;
-     top:110%;
-     left:0;
-     width:0%;
+     top: 110%;
+     left: 0;
+     width: 0%;
      height: 2px;
      border-bottom: 2px solid #253440;
      transition: all 0.4s linear;
-}
+ }
 
-.navdetails a:hover:before{
+ .navdetails a:hover:before {
      width: 100%;
 
-}
+ }
 
  .months-img {
      height: 344px;
@@ -180,7 +184,7 @@ width: 220px;
 
      top: 645px;
      right: 80px;
-  z-index: 1;
+     z-index: 1;
  }
 
  .march {
@@ -197,7 +201,7 @@ width: 220px;
      height: 450px;
      right: 90px;
      top: 1680px;
-  z-index: 1;
+     z-index: 1;
  }
 
  .may {
@@ -214,7 +218,7 @@ width: 220px;
      height: 450px;
      right: 100px;
      top: 2707px;
-  z-index: 1;
+     z-index: 1;
  }
 
  .july {
@@ -231,7 +235,7 @@ width: 220px;
      height: 450px;
      right: 90px;
      top: 3730px;
-  z-index: 1;
+     z-index: 1;
  }
 
  .september {
@@ -248,7 +252,7 @@ width: 220px;
      height: 450px;
      top: 4760px;
      right: 80px;
-  z-index: 1;
+     z-index: 1;
  }
 
  .november {
@@ -264,7 +268,7 @@ width: 220px;
      height: 450px;
      right: 80px;
      top: 5785px;
-  z-index: 1;
+     z-index: 1;
  }
 
 
@@ -319,17 +323,18 @@ width: 220px;
      display: inline-block;
      width: 55%;
  }
+
  .rightanchor a {
      top: 25px;
-    display: inline-block;
-    transform: rotate(90deg);
-    transform-origin: right;
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-size: 12px;
-    left: 105px;
-    z-index: 
+     display: inline-block;
+     transform: rotate(90deg);
+     transform-origin: right;
+     position: relative;
+     text-decoration: none;
+     color: black;
+     font-size: 12px;
+     left: 105px;
+     z-index:
  }
 
 
@@ -415,9 +420,55 @@ width: 220px;
      padding: 15px;
  }
 
+/*code for dark/white theme checkbox */
+
+.checkboxclass {
+  opacity: 0;
+  position:absolute;
+}
+
+.label {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  background-color : black;
+  border-radius: 50px;
+  padding: 5px;
+  width:45px;
+  height:20px;
+}
+
+.ball {
+  background-color: #fff;
+  position: absolute;
+  border-radius:50%;
+  width:20px;
+  height:20px;
+  transition: transform .2s linear;
+}
+.fa-moon-o {
+  color: #f1c40f;
+  margin-left: 4px;
+ font-size: 12px;
+}
+
+.fa-sun-o {
+  color: #f39c12;
+  margin-right: 4px;
+  font-size: 12px;
+}
+
+.checkboxclass:checked + .label .ball {
+  transform: translateX(25px);
+}
+
+
+
+
 
  /* responsive */
-/*
+ /*
  @media only (max-width: 600px) {
      .january {
           height: 450px;
