@@ -8,7 +8,7 @@
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+ 
 }
 
 .tooltip .tooltiptext {
@@ -167,6 +167,7 @@ width: 220px;
      position: absolute;
      top: 130px;
      left: 100px;
+
  }
 
  .february {
@@ -176,13 +177,15 @@ width: 220px;
 
      top: 645px;
      right: 80px;
+  z-index: 1;
  }
 
  .march {
      position: absolute;
      height: 450px;
-     top: 1170px;
+     top: 1160px;
      left: 100px;
+
 
  }
 
@@ -190,14 +193,16 @@ width: 220px;
      position: absolute;
      height: 450px;
      right: 90px;
-     top: 1690px;
+     top: 1680px;
+  z-index: 1;
  }
 
  .may {
      position: absolute;
      height: 450px;
      left: 100px;
-     top: 2200px;
+     top: 2190px;
+
 
  }
 
@@ -205,14 +210,16 @@ width: 220px;
      position: absolute;
      height: 450px;
      right: 100px;
-     top: 2717px;
+     top: 2707px;
+  z-index: 1;
  }
 
  .july {
      position: absolute;
      height: 450px;
      left: 70px;
-     top: 3225px;
+     top: 3220px;
+
 
  }
 
@@ -220,29 +227,32 @@ width: 220px;
      position: absolute;
      height: 450px;
      right: 90px;
-     top: 3735px;
+     top: 3730px;
+  z-index: 1;
  }
 
  .september {
      position: absolute;
      height: 450px;
      left: 100px;
-     top: 4255px;
+     top: 4250px;
+
 
  }
 
  .october {
      position: absolute;
      height: 450px;
-     top: 4765px;
+     top: 4760px;
      right: 80px;
+  z-index: 1;
  }
 
  .november {
      position: absolute;
      height: 450px;
      left: 87px;
-     top: 5280px;
+     top: 5275px;
 
  }
 
@@ -251,12 +261,14 @@ width: 220px;
      height: 450px;
      right: 80px;
      top: 5785px;
+  z-index: 1;
  }
 
 
  .months-img2 {
      height: 344px;
      float: right;
+
  }
 
  .calendar {
