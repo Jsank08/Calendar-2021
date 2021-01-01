@@ -1,430 +1,402 @@
- body {
-
-     background-color: #253440;
-     text-align: center;
-     margin: 0;
-     font-family: 'Merriweather', serif;
- }
- body.dark {
-       background-color: #fff;
- }
-
- /* for tooltip */
- .tooltip {
-     position: relative;
-     display: inline-block;
-
- }
-
- .tooltip .tooltiptext {
-     visibility: hidden;
-     width: 320px;
-     background-color: aliceblue;
-     font-size: .9rem;
-     color: black;
-     text-align: center;
-     border-radius: 6px;
-     padding: 6px 0;
-     position: absolute;
-     z-index: 1;
-     top: -5px;
-     left: -40%;
- }
-
- .tooltip .tooltiptext::after {
-     content: "";
-     position: absolute;
-     top: 50%;
-     right: 100%;
-     margin-top: -5px;
-     border-width: 5px;
-     border-style: solid;
-     border-color: transparent aliceblue transparent transparent;
- }
-
- .tooltip:hover .tooltiptext {
-     visibility: visible;
- }
-
- .tooltip2 {
-     position: relative;
-     display: inline-block;
-
- }
-
- .tooltip2 .tooltiptext2 {
-     visibility: hidden;
-     width: 320px;
-     background-color: #009688;
-     color: white;
-     text-align: center;
-     border-radius: 6px;
-     padding: 5px 0;
-     position: absolute;
-     z-index: 1;
-     top: -5px;
-     right: -40%;
- }
-
- .tooltip2 .tooltiptext2::after {
-     content: "";
-     position: absolute;
-     top: 50%;
-     left: 100%;
-     margin-top: -5px;
-     border-width: 5px;
-     border-style: solid;
-     border-color: transparent transparent transparent #009688;
- }
-
- .tooltip2:hover .tooltiptext2 {
-     visibility: visible;
- }
-
-
-
- .dwtooltip {
-     position: relative;
-     display: inline-block;
-
- }
-
- .dwtooltip .dwtooltiptext {
-     visibility: hidden;
-     width: 220px;
-     background-color: #253440;
-     color: white;
-     text-align: center;
-     border-radius: 6px;
-     padding: 7px 7px;
-     position: absolute;
-     z-index: 1;
-     font-size: .8rem;
-     top: 168%;
-     left: -62%;
-     margin-left: -60px;
- }
-
- .dwtooltip .dwtooltiptext::after {
-     content: "";
-     position: absolute;
-     bottom: 100%;
-     left: 90%;
-     margin-left: -5px;
-     border-width: 5px;
-     border-style: solid;
-     border-color: transparent transparent #253440 transparent;
- }
-
- .dwtooltip:hover .dwtooltiptext {
-     visibility: visible;
- }
-
- /* tooltip end here */
- .tab:hover {
-     background-color: #fff;
-     border-radius: 50%;
- }
-
- .navdetails {
-     display: flex;
-     justify-content: space-around;
-     padding: 20px;
- }
-
- .headernav {
-     display: inline-block;
-     float: right;
-     width: 40%;
-     margin-top: 20px;
- }
-
- .navdetails a {
-     color: #009688;
-     text-decoration: none;
-     font-family: 'Montserrat', sans-serif;
-     font-size: 1.3rem;
-     position: relative;
- }
-
- .navdetails a:before {
-     content: "";
-     position: absolute;
-     top: 110%;
-     left: 0;
-     width: 0%;
-     height: 2px;
-     border-bottom: 2px solid #253440;
-     transition: all 0.4s linear;
- }
-
- .navdetails a:hover:before {
-     width: 100%;
-
- }
-
- .months-img {
-     height: 344px;
-
- }
-
- .january {
-     height: 450px;
-     width: 500p;
-     position: absolute;
-     top: 130px;
-     left: 100px;
-
- }
-
- .february {
-     position: absolute;
-     height: 450px;
-     float: right;
-
-     top: 645px;
-     right: 80px;
-     z-index: 1;
- }
-
- .march {
-     position: absolute;
-     height: 450px;
-     top: 1160px;
-     left: 100px;
-
-
- }
-
- .april {
-     position: absolute;
-     height: 450px;
-     right: 90px;
-     top: 1680px;
-     z-index: 1;
- }
-
- .may {
-     position: absolute;
-     height: 450px;
-     left: 100px;
-     top: 2190px;
-
-
- }
-
- .june {
-     position: absolute;
-     height: 450px;
-     right: 100px;
-     top: 2707px;
-     z-index: 1;
- }
-
- .july {
-     position: absolute;
-     height: 450px;
-     left: 70px;
-     top: 3220px;
-
-
- }
-
- .august {
-     position: absolute;
-     height: 450px;
-     right: 90px;
-     top: 3730px;
-     z-index: 1;
- }
-
- .september {
-     position: absolute;
-     height: 450px;
-     left: 100px;
-     top: 4250px;
-
-
- }
-
- .october {
-     position: absolute;
-     height: 450px;
-     top: 4760px;
-     right: 80px;
-     z-index: 1;
- }
-
- .november {
-     position: absolute;
-     height: 450px;
-     left: 87px;
-     top: 5275px;
-
- }
-
- .december {
-     position: absolute;
-     height: 450px;
-     right: 80px;
-     top: 5785px;
-     z-index: 1;
- }
-
-
- .months-img2 {
-     height: 344px;
-     float: right;
-
- }
-
- .calendar {
-     width: 100%;
- }
-
- .tablecol1:nth-child(2n) {
-     background-color: #009688;
-     color: white;
-     text-align: center;
-     width: 80%;
- }
-
- .tablecol1 {
-     padding: 20px;
-     margin: 50px auto 100px;
-     background-color: aliceblue;
-     text-align: center;
-     width: 80%;
- }
-
- .trow {}
-
- .left {
-     display: inline-block;
-     width: 40%;
- }
-
- .left a {
-     display: inline-block;
-
-     transform: rotate(-90deg);
-     transform-origin: left;
-
-
-     position: relative;
-     bottom: -25px;
-     left: -95px;
-     text-decoration: none;
-     color: black;
-     font-size: 12px;
- }
-
- .right {
-     display: inline-block;
-     width: 55%;
- }
-
- .rightanchor a {
-     top: 25px;
-     display: inline-block;
-     transform: rotate(90deg);
-     transform-origin: right;
-     position: relative;
-     text-decoration: none;
-     color: black;
-     font-size: 12px;
-     left: 105px;
-     z-index:
- }
-
-
- .calendarbody1 {
-     font-family: 'Montserrat', sans-serif;
- }
-
- .calendarbody1:hover {
-     color: black;
-     background-color: #d3dce3;
- }
-
- .calendarbody2 {
-     font-family: 'Montserrat', sans-serif;
- }
-
- .calendarbody2:hover {
-     background-color: #08b1a1;
-     color: white;
- }
-
- .calendarheader {
-     background: aliceblue;
-     padding: 10px;
-     font-family: 'Montserrat', sans-serif;
-     font-size: 2rem;
-     color: black;
-     font-weight: 600;
- }
-
- .calendarheader1 {
-     font-family: 'Montserrat', sans-serif;
- }
-
- .calendarheader2 {
-     background: #009688;
-     padding: 10px;
-     font-family: 'Montserrat', sans-serif;
-     font-size: 2rem;
-     color: white;
- }
-
- .navbar {
-     background-color: aliceblue;
-     height: 100px;
- }
-
- .navbar img {
-     margin: 15px 10px 15px 38px;
-     width: 70px;
- }
-
- .navbar h1 {
-     display: inline-block;
-     font-size: 1.5rem;
-     font-family: 'Sacramento', cursive;
-     float: right;
-     padding-top: 25px;
-
- }
-
- .logo-div {
-     display: inline-block;
-     float: left;
- }
-
- .bottom-container {
-     padding-top: 50px;
-     padding-bottom: 20px;
-     background-color: #009688;
- }
-
-
- .bottom-container p {
-     color: white;
-     font-size: .85rem;
- }
-
-
- .footer-link {
-     text-decoration: none;
-     color: #253440;
-     padding: 15px;
- }
+body {
+  background-color: #253440;
+  text-align: center;
+  margin: 0;
+  font-family: "Merriweather", serif;
+}
+body.dark {
+  background-color: #fff;
+}
+
+/* for tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: aliceblue;
+  font-size: 0.9rem;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: -40%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent aliceblue transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip2 {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 320px;
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: -40%;
+}
+
+.tooltip2 .tooltiptext2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent #009688;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+.dwtooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.dwtooltip .dwtooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #253440;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px 7px;
+  position: absolute;
+  z-index: 1;
+  font-size: 0.8rem;
+  top: 168%;
+  left: -62%;
+  margin-left: -60px;
+}
+
+.dwtooltip .dwtooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 90%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #253440 transparent;
+}
+
+.dwtooltip:hover .dwtooltiptext {
+  visibility: visible;
+}
+
+/* tooltip end here */
+.tab:hover {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.navdetails {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.headernav {
+  float: right;
+  width: 55%;
+  margin-top: 20px;
+}
+
+.navdetails a {
+  color: #009688;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.navdetails a:before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  border-bottom: 2px solid #253440;
+  transition: all 0.4s linear;
+}
+
+.navdetails a:hover:before {
+  width: 100%;
+}
+
+.months-img {
+  height: 344px;
+}
+
+.january {
+  height: 450px;
+  width: 500p;
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+
+.february {
+  position: absolute;
+  height: 450px;
+  float: right;
+
+  top: 645px;
+  right: 80px;
+  z-index: 1;
+}
+
+.march {
+  position: absolute;
+  height: 450px;
+  top: 1160px;
+  left: 100px;
+}
+
+.april {
+  position: absolute;
+  height: 450px;
+  right: 90px;
+  top: 1680px;
+  z-index: 1;
+}
+
+.may {
+  position: absolute;
+  height: 450px;
+  left: 100px;
+  top: 2190px;
+}
+
+.june {
+  position: absolute;
+  height: 450px;
+  right: 100px;
+  top: 2707px;
+  z-index: 1;
+}
+
+.july {
+  position: absolute;
+  height: 450px;
+  left: 70px;
+  top: 3220px;
+}
+
+.august {
+  position: absolute;
+  height: 450px;
+  right: 90px;
+  top: 3730px;
+  z-index: 1;
+}
+
+.september {
+  position: absolute;
+  height: 450px;
+  left: 100px;
+  top: 4250px;
+}
+
+.october {
+  position: absolute;
+  height: 450px;
+  top: 4760px;
+  right: 80px;
+  z-index: 1;
+}
+
+.november {
+  position: absolute;
+  height: 450px;
+  left: 87px;
+  top: 5275px;
+}
+
+.december {
+  position: absolute;
+  height: 450px;
+  right: 80px;
+  top: 5785px;
+  z-index: 1;
+}
+
+.months-img2 {
+  height: 344px;
+  float: right;
+}
+
+.calendar {
+  width: 100%;
+}
+
+.tablecol1:nth-child(2n) {
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+
+.tablecol1 {
+  padding: 20px;
+  margin: 50px auto 100px;
+  background-color: aliceblue;
+  text-align: center;
+  width: 80%;
+}
+
+.trow {
+}
+
+.left {
+  display: inline-block;
+  width: 40%;
+}
+
+.left a {
+  display: inline-block;
+
+  transform: rotate(-90deg);
+  transform-origin: left;
+
+  position: relative;
+  bottom: -25px;
+  left: -95px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+}
+
+.right {
+  display: inline-block;
+  width: 55%;
+}
+
+.rightanchor a {
+  top: 25px;
+  display: inline-block;
+  transform: rotate(90deg);
+  transform-origin: right;
+  position: relative;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  left: 105px;
+}
+
+.calendarbody1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.calendarbody1:hover {
+  color: black;
+  background-color: #d3dce3;
+}
+
+.calendarbody2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.calendarbody2:hover {
+  background-color: #08b1a1;
+  color: white;
+}
+
+.calendarheader {
+  background: aliceblue;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+}
+
+.calendarheader1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.calendarheader2 {
+  background: #009688;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+.navbar {
+  background-color: aliceblue;
+  height: 100px;
+}
+
+.navbar img {
+  margin: 15px 10px 15px 38px;
+  width: 70px;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+  font-family: "Sacramento", cursive;
+  float: right;
+  padding-top: 25px;
+}
+
+.logo-div {
+  float: left;
+}
+
+.bottom-container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: #009688;
+}
+
+.bottom-container p {
+  color: white;
+  font-size: 0.85rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #253440;
+  padding: 15px;
+}
 
 /*code for dark/white theme checkbox */
 
 .checkboxclass {
   opacity: 0;
-  position:absolute;
+  position: absolute;
 }
 
 .label {
@@ -432,25 +404,25 @@
   justify-content: space-between;
   display: flex;
   position: relative;
-  background-color : black;
+  background-color: black;
   border-radius: 50px;
   padding: 5px;
-  width:45px;
-  height:20px;
+  width: 45px;
+  height: 20px;
 }
 
 .ball {
   background-color: #fff;
   position: absolute;
-  border-radius:50%;
-  width:20px;
-  height:20px;
-  transition: transform .2s linear;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s linear;
 }
 .fa-moon-o {
   color: #f1c40f;
   margin-left: 4px;
- font-size: 12px;
+  font-size: 12px;
 }
 
 .fa-sun-o {
@@ -463,12 +435,8 @@
   transform: translateX(25px);
 }
 
-
-
-
-
- /* responsive */
- /*
+/* responsive */
+/*
  @media only (max-width: 600px) {
      .january {
           height: 450px;
