@@ -335,9 +335,9 @@ body.dark {
 }
 
 .left a {
-  display: inline-block;
+  display: block;
 
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg);
   transform-origin: left;
 
   position: relative;
@@ -345,7 +345,7 @@ body.dark {
   left: -95px;
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 12px; */
 }
 
 .right {
